@@ -18,7 +18,8 @@ class KhqrParser {
         if (index + 4 > qrString.length) break;
 
         final tag = qrString.substring(index, index + 2);
-        final length = int.tryParse(qrString.substring(index + 2, index + 4)) ?? 0;
+        final length =
+            int.tryParse(qrString.substring(index + 2, index + 4)) ?? 0;
         index += 4;
 
         if (index + length > qrString.length) break;
@@ -78,7 +79,9 @@ class KhqrParser {
     final merchantCity = rawTags['60'];
 
     return KhqrParsedData(
-      isValid: rawTags.containsKey('00') && rawTags.containsKey('29') && rawTags.containsKey('63'),
+      isValid: rawTags.containsKey('00') &&
+          rawTags.containsKey('29') &&
+          rawTags.containsKey('63'),
       isCrcValid: isCrcValid,
       crc: reportedCrc,
       merchantName: merchantName,

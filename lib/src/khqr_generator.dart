@@ -41,7 +41,8 @@ class KhqrGenerator {
     return _buildPayload(request, isDynamic: false);
   }
 
-  static KhqrPayloadResult _buildPayload(KhqrPaymentRequest request, {required bool isDynamic}) {
+  static KhqrPayloadResult _buildPayload(KhqrPaymentRequest request,
+      {required bool isDynamic}) {
     final buffer = StringBuffer();
 
     // Tag 00: Payload Format Indicator (Fixed "01")

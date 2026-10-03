@@ -35,7 +35,8 @@ void main() {
       expect(result.qrString, contains('5303840')); // USD code
       expect(result.qrString, contains('5406249.00')); // Amount formatted
       expect(result.qrString, contains('5802KH')); // Country code
-      expect(result.qrString, contains('5917Digital Key Store')); // Merchant name
+      expect(
+          result.qrString, contains('5917Digital Key Store')); // Merchant name
       expect(result.qrString, contains('6010Phnom Penh')); // City
       expect(result.qrString, contains('6304')); // CRC tag
 
@@ -108,7 +109,8 @@ void main() {
   });
 
   group('Banking Deep-Link Dispatcher', () {
-    const sampleQr = '00020101021229240015500050937@abaa0105STORE5802KH6304A1B2';
+    const sampleQr =
+        '00020101021229240015500050937@abaa0105STORE5802KH6304A1B2';
 
     test('Builds iOS banking schemes', () {
       final abaUri = KhqrDeepLinker.buildDeepLinkUri(

@@ -1,5 +1,5 @@
 /// Production-Grade Bakong KHQR Generator, Parser & Mobile Banking Deep-Linker
-/// 
+///
 /// Developed by Huot Lysokheng (Mobile Tech Lead & FinTech Architect)
 ///
 /// Features:
