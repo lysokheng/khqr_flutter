@@ -1,0 +1,23 @@
+name: khqr_flutter
+description: Production-grade Bakong KHQR generator, EMVCo TLV parser, CRC-16 engine, and mobile banking deep-link dispatcher for Flutter & Dart.
+version: 1.0.0
+homepage: https://lysokheng.vercel.app/
+repository: https://github.com/lysokheng/khqr_flutter
+issue_tracker: https://github.com/lysokheng/khqr_flutter/issues
+
+topics:
+  - khqr
+  - bakong
+  - payments
+  - fintech
+  - cambodia
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  crypto: ^3.0.3
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
